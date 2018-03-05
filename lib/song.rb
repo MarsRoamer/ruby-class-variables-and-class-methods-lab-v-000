@@ -12,12 +12,9 @@ def initialize(name, artist, genre)
   @artist = artist
   @genre = genre
   @@count += 1
-  # if !@@artists.include?(artist)
-    @@artists << artist
-  # end
-  # if !@@genres.include?(genre)
-    @@genres << genre
-  # end
+  @@artists << artist
+  @@genres << genre
+  
 end
 
 def self.count
@@ -33,9 +30,19 @@ def self.genres
   @@genres.uniq
 end
 
-def self.genre_count
-
-
+def genre_count(genres)
+  hash = {}
+  count = 1
+  @@genres.each do |element|
+    
+    if !hash.has_key?(element)
+      hash[element] = 1
+    else 
+    hash[element] += 1
+  end
+  end
+  hash
 end
+    
 
 end
