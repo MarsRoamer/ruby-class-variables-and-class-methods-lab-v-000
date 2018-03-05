@@ -32,7 +32,7 @@ end
 
 def self.genre_count
   hash = {}
-  
+
   @@genres.each do |element|
 
     if !hash.has_key?(element)
@@ -46,7 +46,7 @@ end
 
 def self.artist_count
   hash = {}
-  
+
   @@artists.each do |element|
 
     if !hash.has_key?(element)
@@ -57,7 +57,7 @@ def self.artist_count
   end
   hash
 end
-  
+
 
 
 end
