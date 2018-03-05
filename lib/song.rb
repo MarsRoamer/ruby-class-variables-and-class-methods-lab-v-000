@@ -5,19 +5,19 @@ attr_accessor :name, :artist, :genre
 @@count = 0
 @@artists = []
 @@genres = []
+@@hash = {}
 
 def initialize(name, artist, genre)
   @name = name
   @artist = artist
   @genre = genre
   @@count += 1
-  if !@@artists.include?(artist)
+  # if !@@artists.include?(artist)
     @@artists << artist
-  end
-
-  if !@@genres.include?(genre)
+  # end
+  # if !@@genres.include?(genre)
     @@genres << genre
-  end
+  # end
 end
 
 def self.count
@@ -35,6 +35,7 @@ end
 
 def self.genre_count
 
+  
 end
 
 end
