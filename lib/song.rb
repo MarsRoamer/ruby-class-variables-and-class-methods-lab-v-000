@@ -40,9 +40,10 @@ def genre_count(genres)
     else
     hash[element] += 1
   end
-  hash
-  end
 
+  end
+  hash
+end
 
 
 
