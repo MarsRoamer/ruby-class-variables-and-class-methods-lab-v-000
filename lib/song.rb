@@ -30,7 +30,7 @@ def self.genres
   @@genres.uniq
 end
 
-def self.genre_count(genres)
+def self.genre_count
   hash = {}
   count = 1
   @@genres.each do |element|
