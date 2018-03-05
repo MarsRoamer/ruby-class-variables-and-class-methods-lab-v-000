@@ -8,8 +8,13 @@ attr_accessor :name, :artist, :genre
 
 def initialize(name, artist, genre)
   @@count += 1
+  if !@@artists.include?(artist)
+    @@artists << artist
+  end
   @@artists << artist
-  @@genres << genre
+  if !@@genres.include?(genre)
+    @@genres << genre
+  end
 
 end
 
