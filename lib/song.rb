@@ -5,7 +5,7 @@ attr_accessor :name, :artist, :genre
 @@count = 0
 @@artists = []
 @@genres = []
-@@hash = {}
+
 
 def initialize(name, artist, genre)
   @name = name
@@ -25,7 +25,7 @@ def self.count
 end
 
 def self.artists
-  @@artists
+  @@artists.uniq
 end
 
 
