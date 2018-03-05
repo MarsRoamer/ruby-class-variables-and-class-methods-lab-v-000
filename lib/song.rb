@@ -7,6 +7,7 @@ attr_accessor :name, :artist, :genre
 @@genres = []
 
 def initialize(name, artist, genre)
+  @name = name
   @@count += 1
   if !@@artists.include?(artist)
     @@artists << artist
